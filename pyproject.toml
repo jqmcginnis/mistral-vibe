@@ -38,6 +38,7 @@ dependencies = [
     "keyring>=25.6.0",
     "markdownify>=1.2.2",
     "mcp>=1.14.0",
+    "medmcp",
     "mistralai==1.12.4",
     "packaging>=24.1",
     "pexpect>=4.9.0",
@@ -82,6 +83,9 @@ vibe-acp = "vibe.acp.entrypoint:main"
 [tool.uv]
 package = true
 required-version = ">=0.8.0"
+
+[tool.uv.sources]
+medmcp = { path = "../medmcp" }
 
 
 [dependency-groups]
