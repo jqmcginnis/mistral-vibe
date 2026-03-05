@@ -193,8 +193,11 @@ cython_debug/
 result
 result-*
 
-# Vibe runtime/session files; keep tools as part of repo when needed
+# Vibe runtime/session files; keep config tracked for reproducible deploys
 .vibe/*
+!.vibe/config.toml
+!.vibe/Modelfile.devstral
+!.vibe/SETUP.md
 
 # Tests run the agent in the playground, we don't need to keep the session files
 tests/playground/*
